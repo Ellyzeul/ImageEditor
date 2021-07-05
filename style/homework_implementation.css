@@ -1,0 +1,17 @@
+.class-2-ex-2 {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.class-2-ex-2 > canvas {
+    border: 1px solid black;
+}
+div > hr {
+    width: 90%;
+    margin: 20px 0;
+}
+div > button {
+    padding: 16px;
+}

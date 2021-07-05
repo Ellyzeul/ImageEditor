@@ -1,0 +1,14 @@
+.grid-area-navbar {
+    grid-area: navbar;
+}
+.grid-area-main {
+    grid-area: main;
+}
+.grid-template-body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 4vh 96vh;
+    grid-template-areas: 
+        'navbar'
+        'main';
+}

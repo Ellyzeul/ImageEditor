@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/collapse.css">
+    <link rel="stylesheet" href="../style/homework_implementation.css">
+    <title>Homework Implementations</title>
+</head>
+<body class="bg-color-50-44-68 display-flex-column">
+
+    <!-- Class 02 Exercise 02 -->
+    <button type="button" class="collapsible">Aula 2 Exercício 2: Inversão de imagem</button>
+    <div class="content">
+        <div class="class-2-ex-2">
+            <canvas id="canvas-class2-ex2" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <hr>
+            <button id="button-class2-ex2">Inverter cores</button>
+        </div>
+    </div>
+
+    <!-- Class 03 Exercise 03 -->
+    <button type="button" class="collapsible">Aula 2 Exercício 3: Redução de ruído aleatório</button>
+    <div class="content">
+        <div class="class-2-ex-2">
+            <p>Coloque aqui uma imagem para que, a partir dela sejam geradas outras 10 imagens com ruídos aleatórios e então um filtro de média das imagens seja aplicado</p>
+            <canvas id="canvas-class2-ex3" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <hr>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../src/services/page_funcionality/collapse.js"></script>
+    <script type="text/javascript" src="../src/services/page_funcionality/drag_and_drop.js"></script>
+    <script type="text/javascript" src="../src/services/page_funcionality/canvas.js"></script>
+    <script type="text/javascript" src="../src/services/image_processing/color_operations.js"></script>
+    <script type="text/javascript" src="../src/services/image_processing/pixel_manipulation.js"></script>
+    <script type="text/javascript" src="../src/services/image_processing/image_object_manipulation.js"></script>
+    <script type="text/javascript" src="../src/services/page_funcionality/homework_button.js"></script>
+</body>
+</html>
