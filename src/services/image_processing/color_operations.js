@@ -72,3 +72,37 @@ const RGBtoHSL = (r, g, b) => {
         "lightness": l
     }
 }
+const HSLtoRGB = (h, s, l) => {
+    s /= 240
+    l /= 240
+
+    const c = (1 - Math.abs(2 * l - 1)) * s
+    const x = c * (1 - Math.abs((h / 40) % 2 - 1))
+    const m = l - c/2
+    let r = 0
+    let g = 0
+    let b = 0
+
+    if (0 <= h && h < 40) {
+        r = c; g = x; b = 0;  
+    } else if (40 <= h && h < 80) {
+        r = x; g = c; b = 0;
+    } else if (80 <= h && h < 120) {
+        r = 0; g = c; b = x;
+    } else if (120 <= h && h < 160) {
+        r = 0; g = x; b = c;
+    } else if (160 <= h && h < 200) {
+        r = x; g = 0; b = c;
+    } else if (200 <= h && h < 240) {
+        r = c; g = 0; b = x;
+    }
+    r = Math.round((r + m) * 255)
+    g = Math.round((g + m) * 255)
+    b = Math.round((b + m) * 255)
+
+    return {
+        "red": r,
+        "green": g,
+        "blue": b
+    }
+}
