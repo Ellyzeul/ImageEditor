@@ -1,0 +1,44 @@
+#rgb_hsl {
+    padding: 0;
+    height: 600px;
+    width: 1200px;
+    background-color: #f1f1f1;
+    border-radius: 9px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "rgb display hsl";
+}
+#rgb {
+    grid-area: rgb;
+}
+#hsl {
+    grid-area: hsl;
+}
+#rgb, #hsl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#display {
+    grid-area: display;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#color_display {
+    height: 50%;
+    width: 50%;
+    border: 1px solid black;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    width: 45px;
+}

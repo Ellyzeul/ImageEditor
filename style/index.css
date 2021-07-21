@@ -1,0 +1,29 @@
+#content {
+    padding: 0;
+    height: 600px;
+    width: 1200px;
+    background-color: #f1f1f1;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    font-size: large;
+}
+button {
+    padding: 30px 450px;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    border: 1px solid rgb(70, 70, 70);
+}
+button:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
