@@ -12,36 +12,189 @@
 </head>
 <body class="bg-color-50-44-68 padding-0 margin-0 grid-template-body display-flex-column grid-area-main">        
     <ul class="grid-area-navbar">
-        <li><a href="/pages/hsl_converter.html">Trabalho - RGB ⇿ HSL</a></li>
-        <li><a href="/pages/homework_implementation.html">Exercícios de aula</a></li>
+        <li><a href="./hsl_converter.html">Trabalho - RGB ⇿ HSL</a></li>
+        <li><a href="./homework_implementation.html">Exercícios de aula</a></li>
     </ul>
 
+    <p>Aula 02</p>
+
     <!-- Class 02 Exercise 02 -->
-    <button type="button" class="collapsible">Aula 2 Exercício 2: Inversão de imagem</button>
+    <button type="button" class="collapsible">Exercício 2: Inversão de imagem</button>
     <div class="content">
-        <div class="class-2-ex-2">
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado)</p>
             <canvas id="canvas-class2-ex2" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
             <hr>
             <button id="button-class2-ex2">Inverter cores</button>
         </div>
     </div>
 
-    <!-- Class 03 Exercise 03 -->
-    <button type="button" class="collapsible">Aula 2 Exercício 3: Redução de ruído aleatório</button>
+    <p>Aula 05</p>
+
+    <!-- Class 05 Exercise 01 -->
+    <button type="button" class="collapsible">Exercício 1: S = cr^γ</button>
     <div class="content">
-        <div class="class-2-ex-2">
-            <p>Coloque aqui uma imagem para que, a partir dela sejam geradas outras 10 imagens com ruídos aleatórios e então um filtro de média das imagens seja aplicado</p>
-            <canvas id="canvas-class2-ex3" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado). Insira um valor para γ, para que assim seja aplicada a fórmula</p>
+            <canvas id="canvas-class5-ex1" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <div>
+                <button id="help-class5-ex1" class="help_button">Sobre o c</button>
+                <script>
+                    document.querySelector("#help-class5-ex1").addEventListener("click", () => {
+                        alert("Em minhas pequisas encontrei que o c é um valor constante, sendo assim o único valor a ser passado pelo usuário o valor do γ")
+                    })
+                </script>
+                <label for="input-class5-ex1_gamma">γ </label><input type="number" id="input-class5-ex1_gamma" name="input-class5-ex1_gamma" step="0.1">
+            </div>
             <hr>
+            <button id="button-class5-ex1">Aplicar fórmula</button>
         </div>
     </div>
+
+    <!-- Class 05 Exercise 02 -->
+    <button type="button" class="collapsible">Exercício 2: Filtros de média e mediana</button>
+    <div class="content content-class5-ex2">
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado)</p>
+            <canvas id="canvas-class5-ex2" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <hr>
+            <button id="button-class5-ex2">Aplicar filtro</button>
+            <p>Filtro de média</p>
+            <canvas id="class5-ex2-mean" width="1080" height="560"></canvas>
+            <p>Filtro de mediana</p>
+            <canvas id="class5-ex2-median" width="1080" height="560"></canvas>
+        </div>
+    </div>
+
+    <!-- Class 05 Exercise 03 -->
+    <button type="button" class="collapsible">Exercício 3: Filtro de Sobel</button>
+    <div class="content">
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado)</p>
+            <canvas id="canvas-class5-ex3" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <hr>
+            <button id="button-class5-ex3">Aplicar filtro</button>
+        </div>
+    </div>
+
+    <!-- Class 05 Exercise 04 -->
+    <button type="button" class="collapsible">Exercício 4: Filtro Laplaciano</button>
+    <div class="content">
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado)</p>
+            <canvas id="canvas-class5-ex4" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <hr>
+            <button id="button-class5-ex4">Aplicar filtro</button>
+        </div>
+    </div>
+
+    <!-- Class 05 Exercise 05 -->
+    <button type="button" class="collapsible">Exercício 5: Limiarização</button>
+    <div class="content content-class5-ex5">
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado)</p>
+            <canvas id="canvas-class5-ex5" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <div>
+                <label for="input-class5-ex5">T </label>
+                <input type="number" id="input-class5-ex5" name="input-class5-ex5" step="1">
+            </div>
+            <hr>
+            <button id="button-class5-ex5">Aplicar filtro</button>
+        </div>
+    </div>
+
+    <!-- Class 05 Exercise 06 -->
+    <button type="button" class="collapsible">Exercício 6: Equalização de histograma</button>
+    <div class="content">
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado)</p>
+            <canvas id="canvas-class5-ex6" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <hr>
+            <button id="button-class5-ex6">Equalizar imagem</button>
+        </div>
+    </div>
+
+    <p>Aula 08</p>
+
+    <!-- Class 08 Exercise 01 -->
+    <button type="button" class="collapsible">Exercício 1: Ruído sal e pimenta</button>
+    <div class="content content-class8-ex1">
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado)</p>
+            <canvas id="canvas-class8-ex1" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <div>
+                <input type="number" id="input-class8-ex1" name="input-class8-ex1" step="1" min="0" max="100">
+                <label for="input-class8-ex1">%</label>
+            </div>
+            <hr>
+            <button id="button-class8-ex1">Aplicar ruído</button>
+        </div>
+    </div>
+
+    <!-- Class 08 Exercise 02 -->
+    <button type="button" class="collapsible">Exercício 2: Filtro da média</button>
+    <div class="content content-class8-ex2">
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado)</p>
+            <canvas id="canvas-class8-ex2" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <hr>
+            <button id="button-class8-ex2">Aplicar filtro</button>
+        </div>
+    </div>
+
+    <!-- Class 08 Exercise 03 -->
+    <button type="button" class="collapsible">Exercício 3: Filtro da mediana</button>
+    <div class="content content-class8-ex3">
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado)</p>
+            <canvas id="canvas-class8-ex3" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <hr>
+            <button id="button-class8-ex3">Aplicar filtro</button>
+        </div>
+    </div>
+
+    <!-- Class 08 Exercise 04 -->
+    <button type="button" class="collapsible">Exercício 4: Filtros de média e mediana na imagem do circuito</button>
+    <div class="content content-class8-ex4">
+        <div class="content-div">
+            <p>Arraste e solte a imagem da placa de circuito e clique no botão para ver a transformação</p>
+            <canvas id="canvas-class8-ex4" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <hr>
+            <button id="button-class8-ex4">Aplicar filtro</button>
+            <p>Filtro de média</p>
+            <canvas id="class8-ex4-mean" width="1080" height="560"></canvas>
+            <p>Filtro de mediana</p>
+            <canvas id="class8-ex4-median" width="1080" height="560"></canvas>
+        </div>
+    </div>
+
+    <p>Aula 09</p>
+
+    <!-- Class 09 Exercise 04 -->
+    <button type="button" class="collapsible">Exercício 4: Filtros Laplaciano de vizinhanças 4 e 8</button>
+    <div class="content content-class9-ex4">
+        <div class="content-div">
+            <p>Arraste e solte uma imagem para dentro do canvas (Quadrado)</p>
+            <canvas id="canvas-class9-ex4" width="1080" height="560" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
+            <hr>
+            <button id="button-class9-ex4">Aplicar filtro</button>
+            <p>Laplace com vizinhança 4</p>
+            <canvas id="class9-ex4-nghb4" width="1080" height="560"></canvas>
+            <p>Laplace com vizinhança 8</p>
+            <canvas id="class9-ex4-nghb8" width="1080" height="560"></canvas>
+        </div>
+    </div>
+
 
     <script type="text/javascript" src="../src/services/page_funcionality/collapse.js"></script>
     <script type="text/javascript" src="../src/services/page_funcionality/drag_and_drop.js"></script>
     <script type="text/javascript" src="../src/services/page_funcionality/canvas.js"></script>
     <script type="text/javascript" src="../src/services/image_processing/color_operations.js"></script>
-    <script type="text/javascript" src="../src/services/image_processing/pixel_manipulation.js"></script>
+    <script type="text/javascript" src="../src/services/image_processing/aritmethic_operations.js"></script>
+    <script type="text/javascript" src="../src/services/image_processing/transformations.js"></script>
     <script type="text/javascript" src="../src/services/image_processing/image_object_manipulation.js"></script>
+    <script type="text/javascript" src="../src/services/image_processing/filters.js"></script>
+    <script type="text/javascript" src="../src/services/image_processing/tools.js"></script>
     <script type="text/javascript" src="../src/services/page_funcionality/homework_button.js"></script>
 </body>
 </html>

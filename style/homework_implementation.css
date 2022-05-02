@@ -1,17 +1,24 @@
-.class-2-ex-2 {
+.content-div {
     height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.class-2-ex-2 > canvas {
+.content-div > canvas {
     border: 1px solid black;
+}
+.content-div > div {
+    padding-top: 10px;
 }
 div > hr {
     width: 90%;
-    margin: 20px 0;
+    /*margin: 20px 0;*/
 }
 div > button {
-    padding: 16px;
+    padding: 14px;
+}
+.help_button {
+    padding: 0;
+    margin: 0;
 }

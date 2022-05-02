@@ -37,6 +37,22 @@ const removeBlue = imgData => {
     return imgData
 }
 
+const RGBtoGrayscale = imgData => {
+    const data = imgData.data
+    let gray
+
+    for(i = 0; i < data.length; i+=4) {
+        gray = data[i] != data[i+1] || data[i] != data[i+2]
+            ? Math.round((0.299*data[i] + 0.587*data[i+1] + 0.114*data[i+2]) / 3)
+            : data[i]
+        data[i]   = gray
+        data[i+1] = gray
+        data[i+2] = gray
+    }
+    
+    return imgData
+}
+
 const RGBtoHSL = (r, g, b) => {
     r /= 255
     g /= 255

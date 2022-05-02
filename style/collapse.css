@@ -2,6 +2,7 @@
     background-color: rgb(77, 63, 109);
     color: white;
     cursor: pointer;
+    margin-top: 5px;
     padding: 18px;
     width: 1200px;
     border: none;
@@ -22,7 +23,20 @@
     padding: 0;
     width: 1200px;
     display: none;
-    overflow: hidden;
     background-color: #f1f1f1;
     border-radius: 0 0 9px 9px;
+}
+
+.content-class5-ex2, .content-class8-ex4, .content-class9-ex4 {
+    padding-top: 615px;
+    height: 1350px;
+}
+
+.content-class5-ex5 {
+    height: 2200;
+}
+
+#class5-ex2-mean, #class5-ex2-median, #class8-ex4-mean, #class8-ex4-median,  #class9-ex4-nghb4, #class9-ex4-nghb8{
+    border: 1px solid black;
+    margin-bottom: 20px;
 }

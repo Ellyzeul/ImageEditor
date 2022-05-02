@@ -11,3 +11,14 @@ const mean = (img1, img2) => {
 
     return createImageDataFromUint8ClampedArray(newPixels)
 }
+
+const getHistogram = (data, color = 0) => {
+    const hist = new Array(256).fill(0)
+    const len = data.length
+
+    for(i = 0; i < len; i+=4) {
+        hist[data[i+color]]++
+    }
+
+    return hist
+}
